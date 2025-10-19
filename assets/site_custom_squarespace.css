@@ -1,0 +1,103 @@
+/*
+.header-title-nav-wrapper {
+	flex: 1 0 100%;
+  	flex-direction: row-reverse;
+}
+
+.header-layout-branding-center
+.header-nav {
+  text-align: right;
+}
+
+.header-title-nav-wrapper::after {
+    content: "Lauren Langley";
+    display: inline-block;
+  	width: 33%;
+  	font-family: Poppins;
+    font-size: 20px;
+  	font-weight: 500;
+    color: #2a2a2a;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.header-display-mobile .header-title-nav-wrapper::after {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header-title-nav-wrapper {
+	flex-direction: row;    
+  }
+}
+*/
+
+/*
+.header-title-logo a::after {
+    content: "Lauren Langley";
+    display: inline;
+  	width: auto;
+  	font-family: Poppins;
+    font-size: 20px;
+  	font-weight: 500;
+    color: #2a2a2a;
+    text-align: left;
+    vertical-align: middle;
+  	padding-left: 16px;
+}
+*/
+
+body:not(.header--menu-open) .white-bold .header-nav-item--active a {
+      background-image: linear-gradient(to right,#5cdfc0 100%,#5cdfc0 0);
+}
+
+.visually-hidden {
+  background-color: #5cdfc0;
+}
+
+.sqs-block-horizontalrule hr {
+  max-width: 150px;
+  height: 1.5px;
+}
+
+.header-title-logo img {
+    vertical-align: middle;
+}
+
+// Slide Up Header + Navigation On Load //
+
+/*
+header {
+  animation: fade-intro-up 2s ease;
+  -webkit-animation: fade-intro-up 2s ease;
+}
+*/
+
+@keyframes fade-intro-up {0%{opacity: 0;-webkit-transform: translate3d(0,50px,0);-moz-transform: translate3d(0,50px,0);-ms-transform: translate3d(0,50px,0);-o-transform: translate3d(0,50px,0);transform: translate3d(0,50px,0);}100%{opacity: 1;-webkit-transform: translate3d(0,0,0);-moz-transform: translate3d(0,0,0);-ms-transform: translate3d(0,0,0);-o-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}}
+
+
+h3, h4 {
+  font-weight: 400;
+}
+
+/*
+.page-section {
+	background-image: radial-gradient(#e5e5e5 20%, transparent 20%),
+     radial-gradient(#e5e5e5 20%, transparent 20%);
+  background-position: 0 0, 2px 2px;
+  background-size: 4px 4px;
+  background-position: -1px -1px;
+}
+*/
+
+[data-section-id="61009639f6b0fb6d24dac234"] .section-background,
+[data-section-id="6100ffa2292a982355180124"] .section-background,
+[data-section-id="610b8bf8dbd65d4b9d4ca263"] .section-background,
+[data-section-id="610b993a3f39d27eda6e405a"] .section-background,
+[data-section-id="61103e9668dc6b1eef70167c"] .section-background,
+[data-section-id="611075f48bacc9199f753d39"] .section-background,
+[data-section-id="6119edac602eec3d407b5669"] .section-background {
+  background-image: radial-gradient(#C1C9D1 20%, transparent 20%);
+  background-size: 4px 4px;
+  background-position: -1px -1px;
+}
