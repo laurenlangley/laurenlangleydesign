@@ -365,14 +365,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .project-grid .row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: wrap;
   margin: 1em auto;
 }
 
@@ -380,7 +378,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 80px;
   margin: 1em auto;
 }
@@ -431,7 +428,6 @@ footer {
 
 .capabilities {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -480,6 +476,7 @@ footer {
     font-size: calc(1.2vw + 1rem);
   }
 }
+
 @media screen and (max-width: 767px) {
   .hero {
     width: 90%;
@@ -500,27 +497,35 @@ footer {
     margin: auto;
   }
   .project-grid .row {
-    gap: 40px;
+    gap: 20px;
   }
   .project-grid .project {
-    flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .project-grid .row:nth-child(even) .project {
     flex-direction: column-reverse;
   }
+  .projects .project-grid .row:nth-child(odd) .project {
+    flex-direction: column;
+  }
   .project-grid .item {
     width: 100%;
   }
-
   header {
     padding: 1rem 1.5rem;
   }
-
+  .masthead .project .item {
+    margin: 0 1em;
+  }
+  .capabilities {
+    flex-direction: column;
+  }
+  .capability {
+    width: 100%;
+  }
   .burger-container {
     display: block;
   }
-
   .menu {
     position: fixed;
     top: 0;
@@ -537,14 +542,12 @@ footer {
     pointer-events: none;
     transition: opacity 0.3s ease-in;
   }
-
   .menu.menu-opened {
     opacity: 1;
     pointer-events: all;
     transition: opacity 0.3s ease-out;
     transition-delay: 0.25s;
   }
-
   .menu a {
     color: var(--bg);
     font-size: 1.75rem;
@@ -559,44 +562,34 @@ footer {
     transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), 
                 opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   }
-
   .menu a:hover {
     opacity: 1;
   }
-
   .menu a.active {
-    /*border-bottom: 2px solid var(--accent);*/
     border-bottom: 0;
     padding-bottom: 1.25rem;
   }
-
   .menu.menu-opened a {
     transform: scale(1) translateY(0);
     opacity: 0.85;
   }
-
   .menu.menu-opened a:nth-child(1) {
     transition-delay: 0.27s;
   }
-
   .menu.menu-opened a:nth-child(2) {
     transition-delay: 0.34s;
   }
-
   .menu.menu-opened a:nth-child(3) {
     transition-delay: 0.41s;
   }
-
   .burger-container.menu-opened {
     transform: rotate(90deg);
   }
-
   .burger-container.menu-opened .topBar {
     transform: translateY(6px) rotate(45deg);
     transition-delay: 0.2s;
     background: var(--bg);
   }
-
   .burger-container.menu-opened .btmBar {
     transform: translateY(-6px) rotate(-45deg);
     transition-delay: 0.2s;
