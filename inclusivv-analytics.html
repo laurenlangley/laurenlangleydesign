@@ -17,6 +17,12 @@
       <div class="title slide-base slide-up">
         <a href="index.html">Lauren Langley</a>
       </div>
+      <div class="burger-container">
+        <div id="burger">
+          <div class="bar topBar"></div>
+          <div class="bar btmBar"></div>
+        </div>
+      </div>
       <nav class="menu slide-base slide-up">
         <a href="projects.html">Projects</a>
         <a href="about.html">About</a>
@@ -198,6 +204,40 @@
 
       animated.forEach(el => {
         if(io){ io.observe(el); } else { el.classList.add('visible'); } // fallback
+      });
+    })();
+  </script>
+  <script>
+    // Slide-in animation on scroll
+    const slideElements = document.querySelectorAll('.slide-base');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    slideElements.forEach(el => observer.observe(el));
+
+    // Hamburger menu toggle
+    (function() {
+      var burger = document.querySelector('.burger-container'),
+          menu = document.querySelector('.menu');
+      
+      burger.onclick = function() {
+        burger.classList.toggle('menu-opened');
+        menu.classList.toggle('menu-opened');
+      };
+
+      // Close menu when clicking on a link
+      var menuLinks = document.querySelectorAll('.menu a');
+      menuLinks.forEach(function(link) {
+        link.onclick = function() {
+          burger.classList.remove('menu-opened');
+          menu.classList.remove('menu-opened');
+        };
       });
     })();
   </script>
