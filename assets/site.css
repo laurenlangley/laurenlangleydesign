@@ -276,7 +276,10 @@ header{
   text-align: center;
   line-height: 1.4em;
 }
-.hero p{ max-width: 65ch; color: var(--ink); }
+.hero p{
+  max-width: 100%;
+  color: var(--ink);
+}
 
 .recommendations {
   padding-block: clamp(3rem, 2vw, 2rem);
@@ -480,6 +483,9 @@ footer {
 @media screen and (max-width: 767px) {
   .hero {
     width: 90%;
+  }
+  .hero p {
+    max-width: 100%;
   }
   .logo-grid {
     display: block;
