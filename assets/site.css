@@ -506,8 +506,6 @@ footer {
   .project-grid .item {
     width: 100%;
   }
-}
-
   header {
     padding: 1rem 1.5rem;
   }
@@ -596,3 +594,4 @@ footer {
     transition-delay: 0.2s;
     background: var(--bg);
   }
+}
