@@ -543,7 +543,7 @@ footer {
     font-size: 1.75rem;
     font-weight: 400;
     padding: 1.25rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.15);
     width: 100%;
     text-align: center;
     opacity: 0.85;
@@ -558,7 +558,8 @@ footer {
   }
 
   .menu a.active {
-    border-bottom: 2px solid var(--accent);
+    /*border-bottom: 2px solid var(--accent);*/
+    border-bottom: 0;
     padding-bottom: 1.25rem;
   }
 
