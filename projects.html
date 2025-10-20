@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lauren Langley – Rhythm Design System</title>
+  <title>Lauren Langley – Projects</title>
   <link rel="icon" href="assets/images/logo_Lauren_Langley.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,132 +25,59 @@
       </div>
       <nav class="menu slide-base slide-up">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <a class="active" href="projects.html">Projects</a>
         <a href="about.html">About</a>
         <a href="https://www.linkedin.com/in/laurenlangley/">LinkedIn</a>
       </nav>
     </div>
   </header>
 
-  <section class="masthead section container">
+  <section class="hero section container">
+    <h2 class="slide-base slide-up">Recent Projects</h2>
+    <div class="eyebrow" aria-hidden="true"><hr></div>
+  </section>
+
+  <section id="block" class="projects section">
+
     <div class="project-grid">
       <div class="row">
-        <div class="project">
-          <div class="item slide-base slide-up">
-            <h2>Rhythm Design System</h2>
-            <h3>Creating the SalesLoft Design System from the Ground Up</h3>
+        <div class="project slide-base slide-up">
+          <div class="item">
+            <img src="assets/images/rhythm-datepicker-02.png" alt="" loading="lazy">
           </div>
-          <div class="item slide-base">
-            <p class="heading">Summary</p>
-            <p>SalesLoft had a growing product ecosystem with little design and code consistency or reusability. I led the multi-year, cross-functional development of a design system with reusable components and style guide documentation that nearly one hundred designers and engineers could leverage in their products daily.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="block" class="feature section">
-    <img src="assets/images/rhythm-datepicker-02.png">
-  </section>
-
-  <section id="focus" class="subpage section section--band">
-    <div class="container slide-base slide-up">
-        <h2 class="">Goals</h2>
-        <img src="assets/images/divider-decoration.png">
-        <div class="project-grid">
-          <div class="row">
-            <ol class="item">
-              <li>Reduce time spent building UI elements from scratch so that reusability is a forcing function for efficiency</li>
-              <li>Sketch design component library that each member of the Product Design team could leverage in their designs daily</li>
-            </ol>
-            <ol class="item">
-              <li>React UI component library that each member of the engineering team could leverage in their development daily</li>
-              <li>Public documentation of a complete design system, including a style guide, component specs and usage, and resources</li>
-            </ol>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <section class="section container">
-    <div class="project-grid">
-      <div class="row">
-        <div class="project">
-          <div class="item slide-base">
-            <p class="heading">Role</p>
-            <p>Design Direction<br>
-            Product Design<br>
-            Development<br>
-            Project Management<br>
-            Team Management</p>
-          </div>
-          <div class="item slide-base">
-            <p class="heading">Process</p>
-            <p>At the beginning of my four-year-long tenure at SalesLoft building the Product Design and UX practices, the Front-End Engineering leader and I committed to collaboratively building a design system together with our teams. SalesLoft, the #1 Sales Engagement platform, was at a stage of hypergrowth and we knew that as we brought on more people our processes and systems would need to scale in order to maintain consistency and maximize efficiency in design and development time.</p><br>
-            <p>The state of our UI at the time, in both design and code, was maturing from a bootstrap look & feel to a custom and uniquely branded platform. While the design team was anxious to help move the platform quickly over to the new look, the reality of product delivery is that designing, then implementing, a complete UI system is a massive undertaking and one that competes with many other priorities being developed on a roadmap, especially if you do not already have a design system in place.</p>
+          <div class="item" >
+            <h3>Rhythm Design System</h3>
+            <h5>Creating the SalesLoft Design System from the Ground Up</h5>
+            <a class="btn btn--primary slide-base slide-up" href="rhythm.html">View Project</a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="project details slide-base slide-up">
-          <div class="item">
-            <img src="assets/images/rhythm-sketch.png" alt="" loading="lazy">
-            <p>Date Picker component in the Sketch design component library</p>
+        <div class="project slide-base slide-up">
+          <div class="item" >
+            <h3>Analytics Design Framework</h3>
+            <h5>Directing the Design of SalesLoft Analytics</h5>
+            <a class="btn btn--primary slide-base slide-up" href="analytics-framework.html">View Project</a>
           </div>
           <div class="item">
-            <p>Although the engineering team had previously put together a bare-bones page on the platform documenting essential styles, there was no component library in design or code. The design and engineering team agreed to create a baseline design system where each team would build out their respective components as they existed in production at that moment. We used these components in our designs and then created a plan to identify and build a specified number of new components together each quarter so that we would release new components into our designs and platform and they would be a one-to-one match that ensured consistency. Over time, these new components were built to reflect the custom SalesLoft design, but the real power we harnessed was in the ability to reuse or easily edit them once they were in the wild.</p>
-            <p>I directed the project along with the engineering leader and at times contributed components, but delegated the creation of the library specs and documentation to the team members who took an interest in learning to build a design system. In one of our team collaboration sessions, we brainstormed names to call our system and since SalesLoft’s dev repos often shared a theme of music and harmony, one of the UI engineers suggested ‘Rhythm’ and it stuck.</p>
+            <img src="assets/images/SalesLoft-Analytics-Overview.png" alt="" loading="lazy">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="project details slide-base slide-up">
+        <div class="project slide-base slide-up">
           <div class="item">
-            <p>
-            Even before we had a library of components to use and accompanying purpose and usage, we were planning a site to document the components in context of a larger design system framework. One designer took the lead to create a site map and page designs, while an engineer paired with her to develop the site internally in his spare time. While these efforts proved fruitful in creating the system’s information architecture and naming the system categories, we realized that maintaining an internal site that we developed would not work for us. The approach limited the number of designers that could contribute because it required them to have a light code skill set, and the time needed by the engineer to develop the site was becoming unsustainable with his other duties.</p>
-            <p>I researched software tools that we could leverage to solve these pain points and proposed using <a href="https://zeroheight.com/" target="_blank">Zeroheight</a>, a collaborative tool that design and dev teams can use to easily display and edit their respective component libraries. The design team led the efforts to produce the style guide and design components, where we relied heavily on our Product Copywriter to finesse the language. Zeroheight integrates with <a href="https://storybook.js.org/" target="_blank">Storybook</a>, an open-source tool that the engineering team used to maintain their component library, so there was no extra effort by developers to contribute to the documentation site. The decision to build our released design system in Zeroheight was well-received by the teams and several more designers were able to participate in the project than would have previously.</p>
+            <img src="assets/images/Inclusivv-Analytics-Dashboard.jpg" alt="" loading="lazy">
           </div>
-          <div class="item">
-            <img src="assets/images/rhythm-table.png" alt="" loading="lazy">
-            <p>Table component in the Design System displaying code from Storybook</p>
+          <div class="item" >
+            <h3>Inclusivv Analytics Dashboard</h3>
+            <h5>From Design Sprint to Production for Customer Admin Analytics</h5>
+            <a class="btn btn--primary slide-base slide-up" href="inclusivv-analytics.html">View Project</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+     </div>
 
-  <section id="block" class="feature downscale section">
-    <img src="assets/images/rhythm-collage.png">
-  </section>
-
-  <section id="focus" class="section section--band">
-    <div class="inner container">
-        <h2 class="slide-base slide-up">Outcome</h2>
-        <img src="assets/images/divider-decoration.png">
-        <p class="slide-base">Our work to create and release the Rhythm Design System over several years was a labor of love on behalf of dozens of designers and engineers. We accomplished our goal to deliver and operationalize a cohesive system consisting of a design library, UI component library, and style guide documentation.
-        </p><br>
-        <p class="slide-base">My recommendation and procurement of a low-cost solution for managing our documentation saved the company valuable resources and enabled design and front-end components to be displayed in one place. In practice to this day, Rhythm increases the efficiency of designers’ and developers’ workflows and educates partners on the visual language of the SalesLoft platform.
-        </p>
-        <p class="btn-bar">
-          <a class="btn btn--accent slide-base slide-up" href="https://zeroheight.com/24921f3d4/p/69da19-rhythm" target="_blank">Visit Rhythm</a>
-        </p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="inner container">
-      <p class="heading">Reflections</p>
-      <p class="slide-base">While the project was a success in that we achieved our goals, there were many lessons learned and improvements that could be made. A challenge that both the design and engineering teams had was difficulty finding time to work on components on a predictable basis, causing the project to move slowly at times. Eventually, we got buy-in from stakeholders to resource a dedicated cross-functional team to build UI components. We were able to get more traction on reusable components being released more quickly, so I wish I had advocated to stakeholders early on in the project, along with the engineering leader, to resource a dedicated cross-functional team to focus on the design system.
-      </p>
-      <p class="slide-base">If I were still at SalesLoft, there are a few things I would want to address in order to maintain a successful design system. I would survey the teams and stakeholders to see what their usage is, what they find valuable, and what can be improved. I would co-create a maintenance plan to ensure that the design and UI components were accurate and up-to-date, assigning ownership as needed. Finally, I would find a way to empirically measure the efficiency that a design system affords designers and engineers. 
-      </p>
-      <img src="assets/images/divider-decoration.png">
-    </div>
-  </section>
-
-  <section class="breadcrumb">
-    <div><h2><a href="inclusivv-analytics.html">← Inclusivv Analytics Dashboard</a></h2></div>
-    <div><h2><a href="analytics-framework.html">Analytics Framework →</a></h2></div>
   </section>
 
   <section class="section-background"></section>
