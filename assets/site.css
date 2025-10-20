@@ -484,14 +484,20 @@ footer {
   .hero {
     width: 90%;
   }
-}
-@media (max-width: 400px) {
   .logo-grid {
     display: block;
-    .logo-grid .logo {
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
+  }
+  .logo-grid .row {
+    flex-direction: column;
+  }
+  .logo-grid .logo {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .logo-grid .logo img {
+    width: 80%;
+    height: auto;
+    margin: auto;
   }
   .project-grid .row {
     gap: 40px;
@@ -506,6 +512,7 @@ footer {
   .project-grid .item {
     width: 100%;
   }
+
   header {
     padding: 1rem 1.5rem;
   }
